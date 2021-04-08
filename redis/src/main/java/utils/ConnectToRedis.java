@@ -1,4 +1,4 @@
-package up;
+package utils;
 
 import com.lambdaworks.redis.RedisClient;
 import com.lambdaworks.redis.RedisConnection;

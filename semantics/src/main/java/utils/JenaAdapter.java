@@ -1,4 +1,4 @@
-package up;
+package utils;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;

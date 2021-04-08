@@ -18,6 +18,8 @@
         <module>fx</module>
         <module>semantics</module>
         <module>redis</module>
+        <module>postgresql</module>
+        <module>utils</module>
     </modules>
 
 </project>

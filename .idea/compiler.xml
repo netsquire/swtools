@@ -17,8 +17,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fx" />
-        <module name="redis" />
         <module name="semantics" />
+        <module name="postgresql" />
+        <module name="redis" />
+        <module name="utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

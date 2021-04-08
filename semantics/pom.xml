@@ -42,7 +42,11 @@
             <groupId>org.netsquire</groupId>
             <artifactId>redis</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.netsquire</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
