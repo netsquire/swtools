@@ -1,11 +1,15 @@
 package reactor;
 
-import pingpong.Pong;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Ping {
 
     public static void main(String[] args) {
-        System.out.println(Pong.replay("init"));
+        List<String> answer = new ArrayList<>();
+        answer.add(fx.Pong.replay("init"));
+        answer.add(up.Pong.replay("init"));
+        System.out.println(answer);
     }
 
 }
