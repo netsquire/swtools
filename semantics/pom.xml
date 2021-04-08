@@ -33,6 +33,11 @@
             <artifactId>jena-core</artifactId>
             <version>4.0.0</version>
         </dependency>
+        <dependency>
+            <artifactId>fx</artifactId>
+            <groupId>org.netsquire</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

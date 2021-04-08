@@ -17,11 +17,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fx" />
+        <module name="redis" />
         <module name="semantics" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="semantics" target="11" />
       <module name="swtools" target="11" />
     </bytecodeTargetLevel>
   </component>
