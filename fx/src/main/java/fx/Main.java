@@ -30,9 +30,10 @@ public class Main extends Application {
         BorderPane border = new BorderPane();
         HBox hbox = addHBox();
         border.setTop(hbox);
+
         border.setLeft(addVBox());
-        addStackPane(hbox);
-        // Add stack to HBox in top region
+        border.setRight(addVBox());
+        addStackPane(hbox); // Add stack to HBox in top region
         border.setCenter(addGridPane());
 
 //        Parent root = FXMLLoader.load(getClass().getResource("/gui.fxml"));
@@ -93,13 +94,10 @@ public class Main extends Application {
         helpText.setFill(Color.WHITE);
         helpText.setStroke(Color.web("#7080A0"));
         stack.getChildren().addAll(helpIcon, helpText);
-        stack.setAlignment(Pos.CENTER_RIGHT);
-// Right-justify nodes in stack
+        stack.setAlignment(Pos.CENTER_RIGHT); // Right-justify nodes in stack
         StackPane.setMargin(helpText, new Insets(0, 10, 0, 0)); // Center "?"
-        hb.getChildren().add(stack);
-        HBox.setHgrow(stack, Priority.ALWAYS);
-// Add stack pane to HBox object
-// Give stack any extra space
+        hb.getChildren().add(stack); // Add stack pane to HBox object
+        HBox.setHgrow(stack, Priority.ALWAYS); // Give stack any extra space
     }
 
     public GridPane addGridPane() {
@@ -107,30 +105,23 @@ public class Main extends Application {
         grid.setHgap(10);
         grid.setVgap(10);
         grid.setPadding(new Insets(0, 10, 0, 10));
-// Category in column 2, row 1
         Text category = new Text("Sales:");
         category.setFont(Font.font("Arial", FontWeight.BOLD, 20));
         grid.add(category, 1, 0);
-// Title in column 3, row 1
         Text chartTitle = new Text("Current Year");
         chartTitle.setFont(Font.font("Arial", FontWeight.BOLD, 20));
         grid.add(chartTitle, 2, 0);
-// Subtitle in columns 2-3, row 2
         Text chartSubtitle = new Text("Goods and Services");
         grid.add(chartSubtitle, 1, 1, 2, 1);
-// House icon in column 1, rows 1-2
         ImageView imageHouse = new ImageView(
                 new Image(LayoutSample.class.getResourceAsStream("/graphics/house.png")));
         grid.add(imageHouse, 0, 0, 1, 2);
-// Left label in column 1 (bottom), row 3
         Text goodsPercent = new Text("Goods\n80%");
         GridPane.setValignment(goodsPercent, VPos.BOTTOM);
         grid.add(goodsPercent, 0, 2);
-// Chart in columns 2-3, row 3
         ImageView imageChart = new ImageView(
                 new Image(LayoutSample.class.getResourceAsStream("/graphics/piechart.png")));
         grid.add(imageChart, 1, 2, 2, 1);
-// Right label in column 4 (top), row 3
         Text servicesPercent = new Text("Services\n20%");
         GridPane.setValignment(servicesPercent, VPos.TOP);
         grid.add(servicesPercent, 3, 2);
