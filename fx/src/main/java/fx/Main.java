@@ -29,12 +29,12 @@ public class Main extends Application {
 
         BorderPane border = new BorderPane();
         HBox hbox = addHBox();
-        border.setTop(hbox);
-
-        border.setLeft(addVBox());
-        border.setRight(addVBox());
         addStackPane(hbox); // Add stack to HBox in top region
-        border.setCenter(addGridPane());
+
+        border.setTop(hbox);
+        border.setLeft(new ContentPane().getPane());
+        border.setRight(new ContentPane().getPane());
+        border.setCenter(new ContentPane().getPane());
 
 //        Parent root = FXMLLoader.load(getClass().getResource("/gui.fxml"));
         primaryStage.setTitle("Hello JavaFx World");
