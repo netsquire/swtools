@@ -26,7 +26,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
         BorderPane border = new BorderPane();
         HBox hbox = addHBox();
         addStackPane(hbox); // Add stack to HBox in top region
@@ -35,8 +34,6 @@ public class Main extends Application {
         border.setLeft(new ContentPane().getPane());
         border.setRight(new ContentPane().getPane());
         border.setCenter(new ContentPane().getPane());
-
-//        Parent root = FXMLLoader.load(getClass().getResource("/gui.fxml"));
         primaryStage.setTitle("Hello JavaFx World");
         primaryStage.setScene(new Scene(border, 1300, 875));
 
