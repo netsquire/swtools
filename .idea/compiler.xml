@@ -23,8 +23,5 @@
         <module name="utils" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="swtools" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
